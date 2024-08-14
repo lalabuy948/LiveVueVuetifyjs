@@ -27,5 +27,11 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["js/**/*.ts", "js/**/*.js", "js/**/*.tsx", "vue/**/*.vue"]
+  "include": [
+    "js/**/*.ts",
+    "js/**/*.js",
+    "js/**/*.tsx",
+    "vue/**/*.vue",
+    "package.json"
+  ]
 }
