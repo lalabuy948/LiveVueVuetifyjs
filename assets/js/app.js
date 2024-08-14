@@ -21,9 +21,22 @@ import "phoenix_html";
 import { Socket } from "phoenix";
 import { LiveSocket } from "phoenix_live_view";
 import topbar from "topbar"; // instead of ../vendor/topbar
-import { getHooks } from "live_vue";
-import components from "../vue";
+import { getHooks, initializeVueApp } from "live_vue";
+import { h } from 'vue';
+import vueComponents from "../vue";
 import "../css/app.css";
+
+// Vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
+const vuetify = createVuetify({
+  components,
+  directives,
+})
+
 
 let csrfToken = document
   .querySelector("meta[name='csrf-token']")
@@ -31,7 +44,14 @@ let csrfToken = document
 let liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
   params: { _csrf_token: csrfToken },
-  hooks: getHooks(components),
+  hooks: getHooks(vueComponents, { initializeApp: ({createApp, component, props, slots, plugin, el}) => {
+    const renderFn = () => h(component, props, slots)
+    const app = createApp({ render: renderFn });
+    app.use(plugin);
+    app.use(vuetify);
+    app.mount(el);
+    return app;
+}}),
 });
 
 // Show progress bar on live navigation and form submits
