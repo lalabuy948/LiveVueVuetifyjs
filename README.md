@@ -9,7 +9,7 @@
 
 ## Installation guide
 
-![Installation.md](/INSTALLATION.md)
+[Installation.md](/INSTALLATION.md)
 
 ## Phoenix
 
