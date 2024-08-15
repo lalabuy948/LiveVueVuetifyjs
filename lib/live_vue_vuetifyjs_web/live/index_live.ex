@@ -13,7 +13,8 @@ defmodule LiveVueVuetifyjsWeb.IndexLive do
     links = %{
       home_page: ~p"/",
       calendar_page: ~p"/calendar",
-      otp_page: ~p"/otp"
+      otp_page: ~p"/otp",
+      timeline_page: ~p"/timeline"
     }
 
     {:ok, assign(socket, :links, links)}

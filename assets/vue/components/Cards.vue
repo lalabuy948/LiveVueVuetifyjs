@@ -61,15 +61,18 @@
             <v-col>
                 <v-card
                     class="pa-2 ma-2"
-                    subtitle="Just card with image"
-                    title="Just card"
+                    prepend-icon="$vuetify"
+                    subtitle="/assets/vue/components/Timeline.vue"
+                    :href="props.links.timeline_page"
                     height="250px"
                 >
-                    <v-img
-                        height="150px"
-                        src="https://picsum.photos/350/200?random=1"
-                        cover
-                    ></v-img>
+                    <template v-slot:title>
+                        <span class="font-weight-black">Timeline Example</span>
+                    </template>
+
+                    <v-card-text class="bg-surface-light pt-4">
+                        Timeline of whatever.
+                    </v-card-text>
                 </v-card>
             </v-col>
             <v-col>

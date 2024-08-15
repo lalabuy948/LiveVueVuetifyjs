@@ -20,6 +20,7 @@ defmodule LiveVueVuetifyjsWeb.Router do
     live "/", IndexLive
     live "/calendar", CalendarLive
     live "/otp", OTPLive
+    live "/timeline", TimelineLive
   end
 
   # Other scopes may use custom stacks.
