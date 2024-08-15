@@ -34,7 +34,6 @@
     "js/**/*.js",
     "js/**/*.tsx",
     "vue/**/*.vue",
-    "plugins/**/*.js",
     "package.json"
   ]
 }

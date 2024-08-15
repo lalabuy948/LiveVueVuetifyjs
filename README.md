@@ -1,4 +1,11 @@
-# LiveVueVuetifyjs
+# LiveVue Vuetifyjs
+
+> Example project for [LiveVue](https://github.com/Valian/live_vue) which brings [vuetifyjs](https://vuetifyjs.com/en/).
+
+
+![logo](https://github.com/Valian/live_vue/blob/main/logo.png?raw=true)
+
+![veutify](https://cdn.vuetifyjs.com/docs/images/one/logos/vuetify-logo-light.png)
 
 To start your Phoenix server:
 
