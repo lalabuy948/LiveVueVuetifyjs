@@ -33,8 +33,7 @@
                     </template>
 
                     <v-card-text class="bg-surface-light pt-4">
-                        Calendar example, keep in mind it's from Labs, and might
-                        be unstable
+                        Keep in mind it's from Labs and might be unstable
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -64,10 +63,11 @@
                     class="pa-2 ma-2"
                     subtitle="Just card with image"
                     title="Just card"
+                    height="250px"
                 >
                     <v-img
                         height="150px"
-                        src="https://picsum.photos/350/200?random=Calendar"
+                        src="https://picsum.photos/350/200?random=1"
                         cover
                     ></v-img>
                 </v-card>
@@ -77,10 +77,11 @@
                     class="pa-2 ma-2"
                     subtitle="Just card with image"
                     title="Just card"
+                    height="250px"
                 >
                     <v-img
                         height="150px"
-                        src="https://picsum.photos/350/200?random=Calendar"
+                        src="https://picsum.photos/350/200?random=2"
                         cover
                     ></v-img>
                 </v-card>
@@ -96,7 +97,7 @@
                 >
                     <v-img
                         height="150px"
-                        src="https://picsum.photos/350/200?random=Calendar"
+                        src="https://picsum.photos/150/150"
                         cover
                     ></v-img>
                 </v-card>
@@ -109,7 +110,7 @@
                 >
                     <v-img
                         height="150px"
-                        src="https://picsum.photos/1500/500?random=Calendar"
+                        src="https://picsum.photos/1500/500"
                         cover
                     ></v-img>
                 </v-card>
