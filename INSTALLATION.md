@@ -35,7 +35,7 @@ ssr: {
 
 Update `assets/js/app.js`.
 
-Thank you @Valian for help with this step.
+Thank you [@Valian](https://github.com/Valian) for help with this step.
 
 ```js
 // ...
