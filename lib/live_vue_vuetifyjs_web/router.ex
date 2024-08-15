@@ -17,8 +17,9 @@ defmodule LiveVueVuetifyjsWeb.Router do
   scope "/", LiveVueVuetifyjsWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    live "/example", ExampleLive
+    live "/", IndexLive
+    live "/calendar", CalendarLive
+    live "/otp", OTPLive
   end
 
   # Other scopes may use custom stacks.

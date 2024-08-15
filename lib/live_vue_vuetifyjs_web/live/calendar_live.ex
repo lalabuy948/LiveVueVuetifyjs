@@ -1,10 +1,13 @@
-defmodule LiveVueVuetifyjsWeb.ExampleLive do
+defmodule LiveVueVuetifyjsWeb.CalendarLive do
   use LiveVueVuetifyjsWeb, :live_view
 
   def render(assigns) do
     ~H"""
     <.header>LiveVue Vuetify Calendar</.header>
-    <.vue id="calendar" v-component="Calendar" v-socket={@socket} v-ssr={true} />
+
+    <div class="pb-60">
+      <.vue id="calendar" v-component="Calendar" v-socket={@socket} v-ssr={true} />
+    </div>
     """
   end
 
