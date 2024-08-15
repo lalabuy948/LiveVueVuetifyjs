@@ -14,7 +14,8 @@ defmodule LiveVueVuetifyjsWeb.IndexLive do
       home_page: ~p"/",
       calendar_page: ~p"/calendar",
       otp_page: ~p"/otp",
-      timeline_page: ~p"/timeline"
+      timeline_page: ~p"/timeline",
+      sparkline_page: ~p"/sparkline"
     }
 
     {:ok, assign(socket, :links, links)}

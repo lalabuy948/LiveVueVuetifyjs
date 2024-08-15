@@ -35,6 +35,8 @@ defmodule LiveVueVuetifyjsWeb.TimelineLive do
 
   def render(assigns) do
     ~H"""
+    <.header>LiveVue Vuetify Timeline</.header>
+
     <.vue id="timeline" v-component="Timeline" timeline={@timeline} v-socket={@socket} v-ssr={false} />
     """
   end

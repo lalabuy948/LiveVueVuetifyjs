@@ -78,15 +78,18 @@
             <v-col>
                 <v-card
                     class="pa-2 ma-2"
-                    subtitle="Just card with image"
-                    title="Just card"
+                    prepend-icon="$vuetify"
+                    subtitle="/assets/vue/components/Sparkline.vue"
+                    :href="props.links.sparkline_page"
                     height="250px"
                 >
-                    <v-img
-                        height="150px"
-                        src="https://picsum.photos/350/200?random=2"
-                        cover
-                    ></v-img>
+                    <template v-slot:title>
+                        <span class="font-weight-black">Sparkline Example</span>
+                    </template>
+
+                    <v-card-text class="bg-surface-light pt-4">
+                        Add some graphs to your life.
+                    </v-card-text>
                 </v-card>
             </v-col>
         </v-row>

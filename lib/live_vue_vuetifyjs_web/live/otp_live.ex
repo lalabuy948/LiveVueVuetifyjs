@@ -3,6 +3,8 @@ defmodule LiveVueVuetifyjsWeb.OTPLive do
 
   def render(assigns) do
     ~H"""
+    <.header>LiveVue Vuetify OTP</.header>
+
     <.vue
       id="otp"
       v-component="OTP"
