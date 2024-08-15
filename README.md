@@ -7,6 +7,12 @@
 
 ![veutify](https://cdn.vuetifyjs.com/docs/images/one/logos/vuetify-logo-light.png)
 
+## Installation guide
+
+![Installation.md](/INSTALLATION.md)
+
+## Phoenix
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
