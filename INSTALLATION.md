@@ -77,4 +77,4 @@ hooks: getHooks(vueComponents, { initializeApp: ({createApp, component, props, s
 mix phx.server
 ```
 
-Navigate to `localhost:4000/example` 🎉
+Navigate to `localhost:4000` 🎉
